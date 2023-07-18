@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mini project</title>
+    <style>
+        *{
+            padding: 0px;
+            outline: opx;
+            margin: 0px;
+        }
+        .body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(125, 187, 249);
+        }
+        .hed{
+            width: 100%;
+            height: 13vh;
+            font-size: 24px;
+            background-color: brown;
+            color: rgba(0, 0, 139, 0.874);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            width: 100%;
+            height: 7vh;
+            position: relative;
+            top: 35%;
+            display: flex;
+            background-color:rgba(239, 157, 7, 0.724) ;
+            justify-content: space-evenly;
+            align-items: center;
+         
+         } 
+        button{
+            width: 10%;
+            height: 6vh;
+            border-radius: 10px;
+            color: rgba(25, 1, 1, 0.969);
+            font-size: 18px;
+            font: bold;
+            background:transparent;  
+            border: 0px; 
+        }
+        button:hover{
+            background-color: rgba(0, 0, 0, 0.446);
+            font-size: 24px;
+            background: transparent;
+        }
+    .dtl{
+        width: 100%;
+        height: vh;
+        position: relative;
+        top:40%;
+        color: black;
+        
+    }
+    img{
+        width: 45%;
+        height: 45vh;
+        position:absolute;
+        left: 2%;
+        display: flex;
+        padding-top: 2%;
+    }
+    .matter{
+        width:50%;
+        padding-top: 2.5%;
+        line-height: 5vh;
+        position:absolute;
+        display: flex;
+        font-size: 22px;
+        justify-content:center;
+        text-align: justify;
+        right:1%;
+        
+    }
+    .dtl2{
+        
+        left: 3%;
+        font-size: 20px;
+        line-height: 5vh;
+        position: absolute;
+        display:flex;
+        text-align:justify;
+        color: rgb(0, 0, 0);
+        padding-top:27%;
+    }
+    table{
+        background-color: rgba(255, 188, 105, 0.541);
+    }
+         
+    </style>
+</head>
+<body>
+    
+    <div class="body">
+        <div class="hed"><div><h1>SRI VIDYANIKITHAN HIGH SCHOOL</h1></div> 
+        <div class="nav">
+            <button onclick="Home()">Home</button>
+            <button onclick="Abo()" style="color: orangered;font-size: 25px">About</button>
+            <button  onclick="FEE()">Fee</button>
+            <button onclick="ADM()">Addmission</button>
+            <button onclick="CON()">Contact</button>
+            <button onclick="LO()">Logout</button>
+          </div>
+          <div class="dtl">
+                
+                <img src="https://th.bing.com/th/id/R.b939d09e81c07ecb7f9a7d202d3bf630?rik=xHB0mXJZ8dKpBA&riu=http%3a%2f%2foupeltglobalblog.com%2fwp-content%2fuploads%2f2013%2f12%2fkids-in-classroom.jpg%3fw%3d400&ehk=dgYgrym65%2fmd5rDXI6swROU52%2bMkRUf6juYA87%2bW%2fIM%3d&risl=&pid=ImgRaw&r=0">
+                <div class="matter"><p>The school is aiming at the all round development of the child with emphasis on Self Discipline, Intelligence, Perseverance and Success at all levels by its learners. Sree Vidyanikethan High School prepares its students for this COMPETITIVE WORLD by strengthening the 
+                    co-curricular activities, extra-curricular activities and academics thus provides holistic education.The management, staff, supporting staff of Sree Vidyanikethan High School  together geared up in developing the all-round performance of the younger generation to
+                     excel in their real life.</div></h3>
+            <div class="dtl2">
+                <table border="1">
+                    <th>
+                    <div><b>* School Name :</b> SRI VIDYANIKITHAN HIGH SCHOOL 
+                    <div><b>* Chairman :</b>GOPAL REDDY</div> 
+                    <div><b>* Principal :</b>P.V.NAGI REDDY</div>
+                    <div><b>* Address :</b>RAMBAGH,ATTAPUR ,HYDERABAD</div>
+                    <div><b>* Area Pincode :</b>500048</div></th>
+                </table>
+            </div>
+    <script>
+    function Abo(){
+             window.location='./pg2.html'
+        }
+    function FEE(){
+             window.location='./pg5.html'
+        }
+    function Home(){
+             window.location='./home.html'
+        }
+    function ADM(){
+             window.location='./pg5.html'
+        }
+    function CON(){
+             window.location='./home.html'
+        }
+    function LO(){
+         window.location='./index.html'
+    }
+    </script>
+</body>
+</html>

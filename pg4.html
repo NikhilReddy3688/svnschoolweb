@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fee</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .tb{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(169, 255, 255);
+        }
+        .hed{
+            width: 100%;
+            height: 13vh;
+            font-size: 24px;
+            background-color: brown;
+            color: rgba(0, 0, 139, 0.874);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            width: 100%;
+            height: 7vh;
+            position: relative;
+            top: 35%;
+            display: flex;
+            background-color:rgba(239, 157, 7, 0.724) ;
+            justify-content: space-evenly;
+            align-items: center;
+         
+         } 
+        button{
+            width: 10%;
+            height: 10vh;
+            border-radius: 10px;
+            color: rgba(25, 1, 1, 0.969);
+            font-size: 18px;
+            background: transparent;
+            font: bold;  
+            border: 0px; 
+        }
+  
+ 
+        button:hover{
+             font-size:25px;
+        }
+        .loc{
+            position: relative;
+            top: 40%;
+            text-align:justify;
+            color: black;
+            justify-content:space-evenly;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="tb">
+        <div class="body">
+            <div class="hed"><div><h1>SRI VIDYANIKITHAN HIGH SCHOOL</h1></div> 
+            <div class="nav">
+                <button onclick="HOME()">Home</button>
+                <button onclick="ABOUT()">About</button>
+                <button  onclick="FEE()">Fee</button>
+                <button onclick="ADM()">Addmission</button>
+                <button onclick="CON()"style="color: orangered;font-size: 25px;">Contact</button>
+                <button onclick="LO()">Logout</button>
+            </div>
+             <div class="loc">
+                location :<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.019721985872!2d78.42841151487596!3d17.362783988093337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b33ae19419%3A0x6d1fdb294693cd54!2sSri%20Vidyaniketan%20High%20School!5e0!3m2!1sen!2sin!4v1689664633438!5m2!1sen!2sin" width="100%" height="300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <b>* School Name :</b> SRI VIDYANIKITHAN HIGH SCHOOL 
+                    <div><b>* Chairman :</b>GOPAL REDDY</div> 
+                    <div><b>* Principal :</b>P.V.NAGI REDDY</div>
+                    <div><b>* Address :</b>RAMBAGH,ATTAPUR ,HYDERABAD</div>
+                    <div><b>* Area Pincode :</b>500048</div> 
+                    <div><b>* Email:</b>svn@gmail.com</div>
+                </div>
+    </div>
+    <script>
+        function ABOUT(){
+                 window.location='./pg2.html'
+            }
+        function HOME(){
+                 window.location='./home.html'
+            }
+        function FEE(){
+                 window.location='./pg5.html'
+            }
+        function ADM(){
+                 window.location='./pg3.html'
+            }
+        function CON(){
+                 window.location='./pg4.html'
+            }
+        function LO(){
+            window.location='./index.html'
+        } 
+    </script>
+</body>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fee</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .tb{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(169, 255, 255);
+        }
+        .hed{
+            width: 100%;
+            height: 13vh;
+            font-size: 24px;
+            background-color: brown;
+            color: rgba(0, 0, 139, 0.874);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            width: 100%;
+            height: 7vh;
+            position: relative;
+            top: 35%;
+            display: flex;
+            background-color:rgba(239, 157, 7, 0.724) ;
+            justify-content: space-evenly;
+            align-items: center;
+         
+         } 
+        button{
+            width: 10%;
+            height: 10vh;
+            border-radius: 10px;
+            color: rgba(25, 1, 1, 0.969);
+            font-size: 18px;
+            background: transparent;
+            font: bold;
+             
+            border: 0px; 
+        }
+        .fb{
+            width: 80%;
+            height: 60%;
+            position:absolute;
+        }
+        table{
+            width: 50%;
+            height: 60vh;
+            text-align: center;
+            color: black;
+            border-radius: 10px;
+             
+            top:130%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            left:30%;
+        }
+        button:hover{
+             font-size:25px;
+        }
+        img{
+           
+            height: 80vh;
+            background-size: 100% 100%;
+            background-position: 100%;
+            padding-left: 20%;
+            padding-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb">
+        <div class="body">
+            <div class="hed"><div><h1>SRI VIDYANIKITHAN HIGH SCHOOL</h1></div> 
+            <div class="nav">
+                <button onclick="HOME()">Home</button>
+                <button onclick="ABOUT()">About</button>
+                <button style="color: orangered;font-size: 25px;">Fee</button>
+                <button onclick="ADM()">Addmission</button>
+                <button onclick="CON()">Contact</button>
+                <button onclick="LO()">Logout</button>
+            </div>  
+    <div class="fb"><img src="https://lh3.googleusercontent.com/p/AF1QipOppqpPspCcKxvYejMywKRPNp1Af3Jfta-lhmKG=w1080-h608-p-no-v0"></div>    
+        <table border="1">
+            <tr>
+                <th>Classes<br>(1 to 10)</th>
+                <th>Fee Per Annum</th>
+            </tr>
+            <tr>  
+                <td>1</td>
+                <td>₹ 10,000</td>
+            </tr>
+            <tr>  
+                <td>2</td>
+                <td>₹ 15,000</td>
+            </tr>   
+            <tr>  
+                <td>3</td>
+                <td>₹ 20,000</td>
+            </tr>
+            <tr>  
+                <td>4</td>
+                <td>₹ 25,000</td>
+            </tr>   
+            <tr>  
+                <td>5</td>
+                <td>₹ 30,000</td>
+            </tr>
+            <tr>  
+                <td>6</td>
+                <td>₹ 35,000</td>
+            </tr>   
+            <tr>  
+                <td>7</td>
+                <td>₹ 45,000</td>
+            </tr>
+            <tr>  
+                <td>8</td>
+                <td>₹ 55,000</td>
+            </tr>
+            <tr>  
+                <td>9</td>
+                <td>₹ 65,000</td>
+            </tr> 
+            <tr>  
+                <td>10</td>
+                <td>₹ 75,000</td>
+            </tr>  
+        </table>
+    </div> 
+</body>
+<script>
+    function ABOUT(){
+             window.location='./pg2.html'
+        }
+    function HOME(){
+             window.location='./home.html'
+        }
+    function FEE(){
+             window.location='./pg5.html'
+        }
+    function ADM(){
+             window.location='./pg3.html'
+        }
+    function CON(){
+             window.location='./pg4.html'
+        }
+    function LO(){
+        window.location='./index.html'
+    }        
+</script>
+</html>

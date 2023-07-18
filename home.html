@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mini project</title>
+ 
+    <style>
+        *{
+            padding: 0px;
+            outline: opx;
+            margin: 0px;
+        }
+        .body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(125, 187, 249);
+        }
+        .hed{
+            width: 100%;
+            height: 13vh;
+            font-size: 24px;
+            background-color: brown;
+            color: rgba(0, 0, 139, 0.874);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            width: 100%;
+            height: 7vh;
+            position: relative;
+            top: 35%;
+            display: flex;
+            background-color:rgba(239, 157, 7, 0.724) ;
+            justify-content: space-evenly;
+            align-items: center;
+         
+         } 
+        button{
+            width: 10%;
+            height: 6vh;
+            border-radius: 10px;
+            color: rgba(25, 1, 1, 0.969);
+            font-size: 18px;
+            font: bold;
+            background:transparent;  
+            border: 0px; 
+        }
+        button:hover{
+            background-color: rgba(0, 0, 0, 0.446);
+            font-size: 24px;
+            background:transparent;
+         
+        }
+        #image-container {
+            width: 100%;
+            height: 75vh;
+            padding-top: 2%;
+            overflow: hidden;
+
+      
+        }
+
+        #image-container img {
+            width: 100%;
+            background-position: 100% 100%;
+            background-size: 100% 100%;
+        
+        }
+
+         
+    </style>
+</head>
+<body>
+    
+    <div class="body">
+        <div class="hed"><div><h1>SRI VIDYANIKITHAN HIGH SCHOOL</h1></div> 
+        <div class="nav">
+            <button onclick="HOME()" style="color: rgba(245, 52, 4, 0.943);font-size: 25px;">Home</button>
+            <button onclick="ABOUT()">About</button>
+            <button onclick="FEE()">Fee</button>
+            <button onclick="ADM()">Addmission</button>
+            <button onclick="CON()">Contact</button>
+            <button onclick="LO()">Logout</button>
+          </div>
+          <div id="image-container">
+            <img src="https://media.self.com/photos/5aa9743e19b7c01d73149d50/4:3/w_2560%2Cc_limit/how-teachers-dont-get-sick.jpg">
+            <img src="https://ngs-space1.sgp1.digitaloceanspaces.com/am/uploads/mediaGallery/image/1616764492821.jpg-org">
+            <img src="https://new-img.patrika.com/upload/2020/09/21/empty-classroom_elementary-school-middle-school-high-school.jpg">
+            <img src="https://www.electrichybridvehicletechnology.com/wp-content/uploads/2020/11/AdobeStock_280548681-cropped.jpeg">
+        </div>
+    <script>
+        var container = document.getElementById("image-container");
+        var images = container.getElementsByTagName("img");
+        var imageIndex = 0;
+        var imageCount = images.length;
+
+        function scrollImages() {
+            images[imageIndex].style.display = "none";
+            imageIndex = (imageIndex + 1) % imageCount;
+            images[imageIndex].style.display = "block";
+        }
+
+        setInterval(scrollImages, 1500); // Change image every 3 seconds
+        function home(){
+             window.location='./home.html'
+ 
+        }
+        function ABOUT(){
+             window.location='./pg2.html'
+        }
+        function FEE(){
+             window.location='./pg5.html'
+        }
+        function CON(){
+             window.location='./pg4.html'
+ 
+        }
+        function ADM(){
+             window.location='./pg3.html'
+        }
+        function LO(){
+             window.location='./index.html'
+        }
+    </script>
